@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jadwal Kuliah</title>
+
+    <style>
+        body {
+            font-family: Segoe UI;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            width: 800px;
+            margin: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .jadwal-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 6px solid #667eea;
+        }
+
+        .hari {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .mata-kuliah {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>📅 Cari Jadwal Kuliah</h2>
+
+        <input type="text" id="search" placeholder="Cari jadwal berdasarkan nama mata kuliah...">
+
+        <div id="jadwal-list">Memuat jadwal...</div>
+    </div>
+
+    <script type="module" src="js/jadwal.js"></script>
+</body>
+</html>

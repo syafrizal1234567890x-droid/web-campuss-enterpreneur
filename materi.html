@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Materi Kuliah</title>
+
+    <style>
+        body {
+            font-family: Segoe UI;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            width: 700px;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .materi-list {
+            margin-top: 30px;
+        }
+
+        .materi-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 6px solid #667eea;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>📚 Upload Materi Kuliah</h2>
+
+        <form id="form-upload-materi">
+            <label>Mata Kuliah</label>
+            <input type="text" id="mataKuliah" placeholder="Contoh: Pemrograman Web" required>
+
+            <label>Judul Materi</label>
+            <input type="text" id="judul" placeholder="Contoh: HTML Dasar" required>
+
+            <label>Deskripsi</label>
+            <textarea id="deskripsi" placeholder="Penjelasan singkat materi"></textarea>
+
+            <label>Upload File Materi</label>
+            <input type="file" id="file-materi" required>
+
+            <button type="submit">🔥 Upload Materi</button>
+        </form>
+
+        <hr>
+
+        <h3>📂 Daftar Materi Kuliah</h3>
+        <div id="materi-list" class="materi-list">Memuat...</div>
+    </div>
+
+    <script type="module" src="js/materi.js"></script>
+</body>
+</html>
